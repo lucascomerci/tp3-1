@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.usuariofinal.aplicacion2.MainActivity"
+    android:layout_weight="7"
+    android:background="@color/celesteFondo"
+    >
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/celesteFondo"
+        tools:background="@color/celesteFondo">
+
+        <Button
+
+            android:id="@+id/btnLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentStart="true"
+            android:background="@color/colorPrimaryDark"
+            android:onClick="login"
+            android:text="INGRESAR"
+            android:textColor="@color/colortextoblanco" />
+           <!-- android:onClick="abriractividad" -->
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView"
+            android:layout_centerHorizontal="true"
+            app:srcCompat="@mipmap/candado"
+            tools:layout_width="150dp" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="58dp"
+            android:text="Control de Acceso"
+
+            android:textColor="@color/colortextoblanco"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+
+        <EditText
+            android:id="@+id/usuario"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/imageView3"
+            android:layout_weight="1"
+            android:hint="Ingrese su Usuario"
+            android:inputType="text"
+            android:text=""
+            android:textAlignment="center"
+            android:textColor="@color/colortextoblanco"
+            android:textColorHint="@color/colortextoblanco"
+            android:textSize="18sp">
+
+            <requestFocus />
+        </EditText>
+
+
+        <EditText
+            android:id="@+id/pass"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/btnLogin"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="12dp"
+            android:layout_weight="1"
+            android:hint="Ingrese su Password"
+            android:inputType="textPassword"
+            android:text=""
+            android:textAlignment="center"
+            android:textColor="@color/colortextoblanco"
+            android:textColorHint="@color/colortextoblanco">
+
+            <requestFocus />
+        </EditText>
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/celesteFondo"
+        >
+
+    </LinearLayout>
+
+</LinearLayout>
+
